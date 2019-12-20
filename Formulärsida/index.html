@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Supportformulär</title>
+</head>
+
+<body>
+  <h1>Supportformulär</h1>
+  <div class="form">
+    <form action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="post">
+
+      <div class="box">
+        Ditt namn:
+        <br>
+        <input type="text" name="namn">
+      </div>
+
+      <div class="box">
+        Telefon:
+        <br>
+        <input type="text" name="telefon">
+      </div>
+
+      <div class="box">
+        Prioritet:
+        <br>
+        <select name="prioritet">
+          <option value="1">Låg</option>
+          <option value="2">Normal</option>
+          <option value="3">Hög</option>
+        </select>
+      </div>
+
+      <div class="box">
+        Tilldela till ort:
+        <br>
+
+        <input type="radio" name="ort" value="gbg" checked>Göteborg
+        <br>
+        <input type="radio" name="ort" value="sthlm">Stockholm
+        <br>
+        <input type="radio" name="ort" value="ume">Umeå
+        <br>
+        <input type="radio" name="ort" value="lule">Luleå
+      </div>
+
+      <div class="box">
+        Kategori:
+        <br>
+        <select name="kategori">
+          <option value="fakt">Fakturering </option>
+          <option value="net">Internet </option>
+          <option value="tel">Telefoni </option>
+          <option value="epost">E-post </option>
+        </select>
+      </div>
+
+      <div class="box">
+        Rubrik
+        <br>
+        <input type="text" name="rubrik">
+      </div>
+
+      <div class="box">
+        Beskrivning
+        <br>
+        <textarea name="beskrivning" rows="10" cols="40"></textarea>
+      </div>
+
+      <div class="box">
+        <input type="submit" name="skicka" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

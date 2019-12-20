@@ -1,0 +1,65 @@
+/* Ger alla typer av rubriker rätt font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Markerar hela dokumentet med en * för att fånga in all text */
+* {
+  font-family: Candara, Verdana, sans-serif;
+}
+
+/* Bakgrund och ram för första tabellens stil, via dess klass tabell1 */
+.tabell1 {
+  background-color: #ffcccc;
+  border: 1px solid black;
+}
+
+/* Bakgrund och ram för andra tabellens stil, via dess klass tabell2 */
+.tabell2 {
+  background-color: #ffcc99;
+  border: 1px solid black;
+}
+
+/* Ändrar färgen på texten i paragrafen med id:n source */
+#source {
+  color: #009900;
+}
+
+/* Väljer länken i #source, specifikt dess hover. */
+/*Detta för att inte påverka andra länkar på sidan man kanske vill styla på annat sätt*/
+#source a:hover {
+  color: #FF0000;
+}
+
+/* All styling ovan var den obligatoriska */
+/* Nedan följer lite av sådant jag vill testa och experimentera med*/
+h1 {
+  text-align: center;
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+tfoot {
+  background-color: #000000;
+  color: #ffcc99;
+  font-size: 0.8em;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 0.2em;
+}
+
+li::before {
+  content: '\1F300';
+  margin-right: 10px;
+}

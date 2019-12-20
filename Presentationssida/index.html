@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 1. title ger sidan en "rubrik" i webbläsarens övre flik -->
+  <title>Emil Rapps presentationssida</title>
+</head>
+
+<body>
+  <div>
+    <!-- 2. h1 är första nivån av rubrik-sättar nivåerna, som används för att tydligare dela in sidor
+      i olika sektioner.  -->
+    <h1>Emil Rapps presentationssida</h1>
+
+    <h2>Om mig</h2>
+    <!-- 3. p är för att skapa en form av styckindelning, och lättare
+      dra gränsen mellan sidans olika element-->
+    <p>Jag heter Emil Rapp, är 19 år gammal &amp; bor i Stockholm.
+      På dagarna jobbar jag som lärarassistent &amp; fritidsledare på en grundskola i Bromma.
+      Förutom denna kurs så förkovrar jag mig i ny kunskap genom en webbkurs i Svensk Politik,
+      så jag har gott om saker att göra när jag kommer hem från jobbet.
+      Jag läste lite programmering på gymnasiet, men då i Java &amp; R.
+      Målet för mig med denna kurs är egentligen att få lite mer
+      <!-- 6. strong är för att markera text i fetstil där det behövs av förtydligande skäl,
+        ofta kommer en skärmläsare betona texten annorlunda, så bör undvikas i stilistiska situationer. -->
+      <strong>praktisk</strong> användning för det jag lär mig.
+      Vill man läsa min rapport från uppgift 1a klickar man på länken under:</p>
+    <!-- 4. a är elementet för länkar inom och utom webbsidan.
+      den innehåller två obligatoriska attribut, den ena är länken själv,
+      den andra är texten som ska stå -->
+    <a href="intro.html">Länk till analys från uppgift 1a</a>
+    <!-- br ligger här för att bryta av raden, bilden och länken gick ihop
+        fult på samma rad annars -->
+    <br>
+    <!-- 5. img är elementet för bilder, man placerar bildens sökväg som ett attribut,
+      det andra attributet är en förklaring för synskadade och skärmläsare -->
+    <img src="bilder/katt.jpg" alt="Emil och hans katt Skrållan" style="width:30%;height:30%">
+
+    <h2>Fritidssysslor</h2>
+    <p>När jag inte pluggar eller jobbar så är det mest politik &amp; fotografering som är mina intressen.
+      Att bara få ta en lugn promenad, helst genom skogen, är något jag njuter av väldigt mycket.
+      Friluftslivet får jag även ut i min syssla som scoutledare, där med lite äldre barn än de i jobbet.
+      Politiken kanaliserar jag genom ett
+      <!-- 7. em liknar strong men finns istället för att sätta dit en kursiv stil på texten -->
+      <em>halv-aktivt</em> medlemskap i ett politiskt ungdomsförbund, LUF.
+      Men framför allt delar jag mina tankar genom sporadiska tweets på min <strong>väldigt rekommenderade</strong> Twitterprofil, länk nedan. </p>
+    <img src="bilder/eld.jpg" alt="En brasa" style="width:30%;height:30%">
+
+
+    <h2>Sidor jag rekommenderar för hemsidetillverkning</h2>
+    <!-- 9. ul är en osorterad lista till skillnad från ol. Man fyller båda med li innehållande
+      de element man vill ha i en lista, som exempelvis länkar i detta fall -->
+    <ul>
+      <li><a href="https://www.w3schools.com/tags/">w3schools - lista över HTML element</a></li>
+      <li><a href="https://color.adobe.com/sv/create">Adobe Color Wheel- snygg sida för att välja &amp; utforska färger</a></li>
+      <li><a href="https://www.pexels.com/">Pexels - bildbank under CreativeCommons-licensen</a></li>
+      <li><a href="https://fonts.google.com/">Google Fonts - enkelt sätt att hitta passande typsnitt</a></li>
+    </ul>
+    <img src="bilder/kod.jpg" alt="Laptop med kod" style="width:30%;height:30%">
+
+
+    <h2>Övrigt</h2>
+    <h3>Lätthetsfaktor på att hitta passande platser för elementen</h3>
+    <!-- 8. table, tr, och td. De är tabellen själv, dess rader och innehållande elements taggar.
+      Man behöver en table, följd av en tr för varje rad man vill ha, innehållande alla element
+      man vill fylla tabellen med -->
+    <table>
+      <tr>
+        <th>Element</th>
+        <th>Lätthetsfaktor</th>
+      </tr>
+      <tr>
+        <td>Rubriker</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>Bilder</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Text</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Länkar</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Tabeller</td>
+        <td>1</td>
+      </tr>
+
+    </table>
+
+    <h3>Nå mig på sociala medier</h3>
+    <a href="https://twitter.com/RappEmil"><img src="bilder/twitter.png" alt="ikon till twitter" style="width:64px;height:64px"></a>
+    <a href="https://www.facebook.com/rapp.emil"><img src="bilder/facebook.png" alt="ikon till facebook" style="width:64px;height:64px"></a>
+    <a href="https://www.instagram.com/emil.rapp"><img src="bilder/instagram.png" alt="ikon till instagram" style="width:64px;height:64px"></a>
+    <a href="https://www.snapchat.com/add/wipperyrapp"><img src="bilder/snapchat.png" alt="ikon till snapchat" style="width:64px;height:64px"></a>
+
+  </div>
+</body>
+
+</html>

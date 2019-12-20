@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Styleade Formulär</title>
+</head>
+
+<body>
+  <header>
+    <h1>Supportformulär</h1>
+  </header>
+  <form action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="post">
+
+    <!-- Alla sektioner i formuläret placeras i classen "box" för att lättare -->
+    <!-- hantera styling och radavstånd -->
+    <div class="box">
+      <label for="namn">Ditt namn:</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <!-- placeholder placerar in lite text som exempel eller riktlinje på vad som ska synas i rutan -->
+      <!-- autofocus markerar ett fält automatiskt när sidan öppnas -->
+      <!-- WAVE-verktyget ville ha en "label" för varje del i formuläret, så en label lades till, ihophörande med en id-tagg på elementet -->
+      <input type="text" name="namn" id="namn" placeholder="Winston Smith" required autofocus>
+    </div>
+    <div class="box">
+      <label for="telefon">Telefon:</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <!-- placeholder placerar in lite text som exempel eller riktlinje på vad som ska synas i rutan -->
+      <input type="text" name="telefon" id="telefon" placeholder="0920-49-1000" required>
+    </div>
+
+    <div class="box">
+      <label for="prioritet"> Prioritet:</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <select name="prioritet" id="prioritet" required>
+        <!-- disabled och selected väljer ett alternativ som standard men låter inte den vara ett korrekt svar -->
+        <option value="" disabled selected>Välj en prioritet</option>
+        <option value="1">Låg</option>
+        <option value="2">Normal</option>
+        <option value="3">Hög</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <fieldset>
+        <legend>Tilldela till ort:</legend>
+        <br>
+        <!-- required här kräver inte Göteborg specifikt, utan ett av alternativen med samma "name" -->
+        <input type="radio" name="ort" id="gbg" value="gbg" required>
+        <label for="gbg">Göteborg</label>
+        <br>
+        <input type="radio" name="ort" id="sthlm" value="sthlm">
+        <label for="sthlm">Stockholm</label>
+        <br>
+        <input type="radio" name="ort" id="ume" value="ume">
+        <label for="ume">Umeå</label>
+        <br>
+        <input type="radio" name="ort" id="lule" value="lule">
+        <label for="lule">Luleå</label>
+      </fieldset>
+    </div>
+
+    <div class="box">
+      <label for="kategori">Kategori:</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <select name="kategori" id="kategori" required>
+        <!-- disabled och selected väljer ett alternativ som standard men låter inte den vara ett korrekt svar -->
+        <option value="" disabled selected>Välj en kategori</option>
+        <option value="fakt">Fakturering </option>
+        <option value="net">Internet </option>
+        <option value="tel">Telefoni </option>
+        <option value="epost">E-post </option>
+      </select>
+    </div>
+
+    <div class="box">
+      <label for="rubrik">Rubrik</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <!-- placeholder placerar in lite text som exempel eller riktlinje på vad som ska synas i rutan -->
+      <input type="text" name="rubrik" id="rubrik" placeholder="Problem med övervakningssystemen" required>
+    </div>
+
+    <div class="box">
+      <label for="beskrivning">Beskrivning</label>
+      <br>
+      <!-- required gör att formuläret inte kan skickas för än sektionen har ett innehåll -->
+      <!-- placeholder placerar in lite text som exempel eller riktlinje på vad som ska synas i rutan -->
+      <textarea name="beskrivning" id="beskrivning" rows="10" cols="40" placeholder="Oceania was at war with Eastasia. Oceania had always been at war with Eastasia. " required></textarea>
+    </div>
+
+
+    <div class="box">
+      <input type="submit" name="skicka" value="Submit">
+      <input type="reset" name="reset" value="Reset">
+    </div>
+
+  </form>
+</body>
+
+</html>

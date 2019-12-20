@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  background: linear-gradient(0deg, #ffc419, #e89617, #ff8126, #e84417, #ff2926, #e8176c);
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  -o-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+}
+
+#text-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.knappar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.knappar a {
+  background-image: radial-gradient(#7AF03F, #47FF51, #35E878, #3BFFC2);
+  border: none;
+  border-radius: 150px;
+  padding: 0.7em;
+  margin: 0.7em;
+  margin-top: 0em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.knappar a:hover {
+  background-image: radial-gradient(#26B9FF, #2B76F0, #3243FF);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#nyan {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+}
+
+#nyan:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .knappar {
+    flex-direction: column;
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 50% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 50% 0%
+  }
+
+  50% {
+    background-position: 51% 100%
+  }
+
+  100% {
+    background-position: 50% 0%
+  }
+}

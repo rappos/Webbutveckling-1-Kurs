@@ -1,0 +1,84 @@
+/* Ger allt på hela sidan samma typsnitt */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Gav hela sidan en bakgrundsfärg för att skilja den från delen med all input*/
+html {
+  background-color: rgb(150, 255, 230);
+}
+
+/* Allmänn styling av rubriken, större tecken */
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+}
+
+/* Centrerade formuläret i mitten av sidan */
+/* Gav lite utrymme åt kanterna och gjorde bakgrunden vit för tydlighets skull  */
+/* Ramade även snyggt in formulärsdelen */
+.form {
+  margin: auto;
+  width: 90%;
+  padding: 2%;
+  background-color: #FFF;
+  border: 4px solid black;
+  border-radius: 30px;
+}
+
+/* För att få ett bätre radavstånd mellan sektionerna så */
+/* placerades en margin under varje del */
+.box {
+  margin-bottom: 20px;
+}
+
+/* Breddade alla fält till maxbredd för att ge mer utrymme */
+/* Padding ger lite utrymme inuti boxen */
+/* Behövde använda box-sizing för att inte fältet skulle rymma utanför formulärsramen */
+/* Ändrade färg och gav ramen rundade hörn */
+input[type=text], textarea, select, fieldset {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: 2px solid #ff6347;
+  border-radius: 10px;
+}
+
+/* Det byter färg när man markerar ett fält */
+/* outline: none , tar bort standard-markeringen som blir när man markerar ett fält  */
+input[type=text]:focus, textarea:focus, input[type=text]:hover, textarea:hover, select:focus, select:hover {
+  border: 2px solid #75BB75;
+  outline: none;
+}
+
+/* Gråar ut standardalternativet så det liknar alla andra placeholders */
+select:invalid {
+  color: #888;
+}
+
+/* De andra alternativen blev också gråa utan denna rad med styling, */
+/*där man markerar alla utom den ogiltiga */
+option:not(disabled) {
+  color: #000;
+}
+
+/* Tillåter nu endast en minskning i höjd på textfältet */
+textarea {
+  resize: vertical;
+}
+
+/* Samma sorts styling som på text-boxarna, dock lite mer färg för att skilja dem från själva formuläret */
+input[type=submit], input[type=reset] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 2px solid #ff6347;
+  background-color: #ff6347;
+  border-radius: 10px;
+}
+
+/* Samma sorts styling som på text-boxarna */
+input[type=submit]:hover, input[type=reset]:hover, input[type=submit]:focus, input[type=reset]:focus {
+  border: 2px solid #75BB75;
+  background-color: #75BB75;
+  outline: none;
+}
